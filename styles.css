@@ -25,14 +25,14 @@
 
 body, html {
     margin: 0;
-    padding: 10px;
+    padding: 2.5rem;
     background: var(--background);
     color: var(--text);
     font-family: var(--font);
 }
 
 img {
-    width: 30%;
+    width: 15rem;
     border-radius: calc(var(--image) * 2);
     border: 4px solid var(--text);
 }
@@ -73,4 +73,25 @@ button {
     cursor: pointer;
     font-family: var(--font);
     width: 160px;
+}
+
+.section_profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #222222;
+    border-radius: 0.5rem;   
+    border: .125rem solid #d7d7d7;
+    max-width: auto;
+    color: #d7d7d7;
+}
+
+.padding-global {
+    padding: 2.5rem;
 }
