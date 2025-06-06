@@ -1,6 +1,26 @@
 
 // Replace the arguments below according to your preference.
 
+const moodChangeBtn = document.getElementById("mood-btn")
+const favouriteFruitArr = ["watermelon", "tomato", "banana", "orange", "avocado", "blueberry"]
+const favouriteMovieGenreArr = ["space", "scary", "military", "romantic", "cowboy", "fantasy", "superhero"]
+const favouriteModeArr = ["light", "dark"]
+const favouriteEdgeStyleArr = ["sharp", "soft","round"]
+
+moodChangeBtn.addEventListener("click", () => changeTheme())
+
+function getRandomNumInArray(arr)  {
+    let randomNum = Math.round(Math.random() * arr.length)
+    return arr[randomNum]
+}
+
+function changeTheme()  {
+    favouriteMovieGenre(getRandomNumInArray(favouriteMovieGenreArr))
+    favouriteFruit(getRandomNumInArray(favouriteFruitArr))
+    favouriteMode(getRandomNumInArray(favouriteModeArr))
+    favouriteEdgeStyle(getRandomNumInArray(favouriteEdgeStyleArr))
+}
+
 // space, scary, military, romantic, cowboy, fantasy, superhero
 favouriteMovieGenre("superhero")
 
